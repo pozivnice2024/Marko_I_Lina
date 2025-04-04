@@ -6,6 +6,11 @@ onload = (event) => {
 
 function SwitchLanguage(language)
 {
+    if (language == null)
+    {
+        language = "serbian";
+    }
+
     let languageTags = document.getElementsByClassName("language_switch");
 
     for (let i=0; i<languageTags.length; i++)
